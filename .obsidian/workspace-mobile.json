@@ -1,0 +1,121 @@
+{
+  "main": {
+    "id": "b00f4fa0b6d8ffe2",
+    "type": "split",
+    "children": [
+      {
+        "id": "cd3863faa83037b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69798f03e1cca011",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0524cd1028b0f59d",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "a1b6fa7127af18a3",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "ffaf836eb1ddef7b",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "5b3d7576825ed261",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "6959a0d402213bc3",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "90ccd0e95f504e61",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "61ee34e5e5691447",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "cb8b81a78565212a",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "acc3d39f9cf7719c",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "a1b6fa7127af18a3",
+  "lastOpenFiles": [
+    "2022-11-24.md",
+    "未命名 1.md"
+  ]
+}
