@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "cd3863faa83037b3",
+        "id": "f7703bf6353fb134",
         "type": "tabs",
         "children": [
           {
-            "id": "69798f03e1cca011",
+            "id": "7af281cd782a88a1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "未命名.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "未命名.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "未命名.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -113,16 +107,15 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {
-            "file": "未命名.md"
-          }
+          "state": {}
         }
       }
     ],
     "currentTab": 0
   },
-  "active": "a1b6fa7127af18a3",
+  "active": "7af281cd782a88a1",
   "lastOpenFiles": [
+    "未命名.md",
     "2022-11-24.md",
     "未命名 1.md"
   ]
