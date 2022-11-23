@@ -11,12 +11,16 @@
             "id": "7af281cd782a88a1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "测试.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "d43f944980afad22",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +89,6 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "测试.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +105,6 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "测试.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -113,9 +115,7 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {
-            "file": "测试.md"
-          }
+          "state": {}
         }
       }
     ],
@@ -123,8 +123,10 @@
   },
   "active": "a1b6fa7127af18a3",
   "lastOpenFiles": [
+    "cessation/qwe.md",
+    "未命名 1.md",
+    "未命名.md",
     "测试.md",
-    "2022-11-24.md",
-    "未命名 1.md"
+    "2022-11-24.md"
   ]
 }
