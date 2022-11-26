@@ -30,7 +30,7 @@ This is my plan for the day broken into 3 main sections:
 
 ## Day TODO
 #todo
-- [ ] 修改表格国际化
+- [x] 修改表格国际化
 - [ ] 修改表单内容中的样式
-- [ ] 修改表单中的大小写问题
+- [x] 修改表单中的大小写问题
 - [ ] 修改表格样式
