@@ -30,7 +30,7 @@ This is my plan for the day broken into 3 main sections:
 
 ## Day TODO
 #todo
-- [x] 修改表格国际化
-- [ ] 修改表单内容中的样式
-- [x] 修改表单中的大小写问题
-- [ ] 修改表格样式
+- [ ] uml上的edcoder
+- [ ] uml实验报告
+- [ ] javaee实验
+- [ ] 大数据实验
