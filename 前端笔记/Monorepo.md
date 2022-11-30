@@ -16,8 +16,3 @@
 | [Rush](https://link.juejin.cn/?target=https%3A%2F%2Frushjs.io%2F "https://rushjs.io/")              | 一个可扩展的 web 单仓库管理器。                        |
 | [Nx](https://link.juejin.cn/?target=https%3A%2F%2Fnx.dev%2F "https://nx.dev/")                      | 具有一流的 monorepo 支持和强大集成的下一代构建系统。   |
 |[Lerna](https://link.juejin.cn/?target=https%3A%2F%2Fwww.lernajs.cn%2F "https://www.lernajs.cn/")|用于管理包含多个软件包的项目|
-sdklfhsd
-
-
-
-
