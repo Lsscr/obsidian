@@ -61,3 +61,33 @@ function ProductManager(name, age) {
     this.work = ['订会议室', '写PRD', '催更']
 }
 ```
+这些构造器里共有的属性都可以进行相关的抽离，并返回一个构造好的初始化对象
+```javascript
+function User(name , age, career, work) {
+    this.name = name
+    this.age = age
+    this.career = career 
+    this.work = work
+}
+
+function Factory(name, age, career) {
+    let work
+    switch(career) {
+        case 'coder':
+            work =  ['写代码','写系分', '修Bug'] 
+            break
+        case 'product manager':
+            work = ['订会议室', '写PRD', '催更']
+            break
+        case 'boss':
+            work = ['喝茶', '看报', '见客户']
+        case 'xxx':
+            // 其它工种的职责分配
+            ...
+            
+    return new User(name, age, career, work)
+}
+```
+### 总结
+**将创建对象的过程单独封装，这样的操作就是工厂模式。** 
+应用场景是在用到了大量的构造函数与大量的new方法的时候，就饿可以使用工程模式重构代码
