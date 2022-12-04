@@ -113,6 +113,63 @@ function Factory(name, age, career) {
 **保证一个类仅有一个实例，并提供一个访问它的全局访问点**，这样的模式就叫做单例模式。
 简单点说就是只有一个对象
 ### 两个方法实现单例模式
-#### 使用类的静态方法
+#### 使用类的静态方法(ES6中的class，static，constructor)
+ES6中提供了为`class`提供了`static`关键字定义静态方法， 我们可以将`constructor`中判断是否实例化的逻辑放入一个静态方法`getInstance`中，调用该静态方法获取实例， `constructor`中只包需含实例化所需的代码，这样能增强代码的可读性、结构更加优化。
+``` typescript
+class SingletonApple {
+
+    name: any;
+
+    creator: any;
+
+    products: any;
+
+    static instance: any;
+
+    constructor(name, creator, products) {
+
+        this.name = name;
+
+        this.creator = creator;
+
+        this.products = products;
+
+    }
+
+    //静态方法
+
+    static getInstance(name, creator, products) {
+
+      if(!this.instance) {
+
+        this.instance = new SingletonApple(name, creator, products);
+
+      }
+
+      return this.instance;
+
+    }
+
+  }
+```
 
 #### 使用闭包
+``` typescript
+const singleDog = (function(){
+
+    let instance = null;
+
+    return function(){
+
+        if(!instance){
+
+            instance = singleDog()
+
+        }
+
+        return instance
+
+    }
+
+})()
+```
