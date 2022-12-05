@@ -32,3 +32,24 @@ $ npm install --save-dev @babel/preset-react
   }
 ```
 注意，以下所有 Babel 工具和模块的使用，都必须先写好`.babelrc`。
+
+### polyfill
+Babel 默认只转换新的 JavaScript 句法（syntax），而不转换新的 API，比如`Iterator`、`Generator`、`Set`、`Map`、`Proxy`、`Reflect`、`Symbol`、`Promise`等全局对象，以及一些定义在全局对象上的方法（比如`Object.assign`）都不会转码。
+
+举例来说，ES6 在`Array`对象上新增了`Array.from`方法。Babel 就不会转码这个方法。如果想让这个方法运行，可以使用`core-js`和`regenerator-runtime`(后者提供generator函数的转码)，为当前环境提供一个垫片。
+
+安装命令如下。
+``` bash
+$ npm install --save-dev core-js regenerator-runtime
+```
+
+然后，在脚本头部，加入如下两行代码。
+``` js
+import 'core-js';
+import 'regenerator-runtime/runtime';
+// 或者
+require('core-js');
+require('regenerator-runtime/runtime');
+```
+
+Babel 默认不转码的 API 非常多，详细清单可以查看`babel-plugin-transform-runtime`模块的[definitions.js](https://github.com/babel/babel/blob/master/packages/babel-plugin-transform-runtime/src/runtime-corejs3-definitions.js)文件。
