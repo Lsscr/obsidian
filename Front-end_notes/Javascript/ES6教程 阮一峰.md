@@ -54,26 +54,3 @@ require('regenerator-runtime/runtime');
 
 Babel 默认不转码的 API 非常多，详细清单可以查看`babel-plugin-transform-runtime`模块的[definitions.js](https://github.com/babel/babel/blob/master/packages/babel-plugin-transform-runtime/src/runtime-corejs3-definitions.js)文件。
 
-
-```dataviewjs
-function projectTracker(dv, query) {
-    let searchPagePaths = dv.pages(query).file.path
-    
-    for(let i=0; i < searchPagePaths.length; i++){
-        if(dv.page(searchPagePaths[i]).Total){
-                    let title = dv.page(searchPagePaths[i]).Title;
-                    let total = dv.page(searchPagePaths[i]).Total;
-                    let status = ((dv.page(searchPagePaths[i]).Completed / dv.page(searchPagePaths[i]).Total) * 100).toFixed();
-                    let suffix = dv.page(searchPagePaths[i]).Suffix;
-                    const progress = "![pb|500](https://progress-bar.dev/" + status + "/?scale=" + "100" + "&title=" + title + "&width=400)";
-                    dv.paragraph(progress);
-                    dv.paragraph("<br>");
-        }
-    }
-} 
-
-projectTracker(
-    dv,
-    "#projects"
-)
-```
