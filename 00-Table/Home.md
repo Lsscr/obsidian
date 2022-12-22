@@ -43,3 +43,7 @@ dv.table(["Name", "Status", "Project", "Due Date", ""], dv.pages("#tasks")
 ```dataview
 TABLE tag,status,date from #JavaScript & #前端 sort date desc
 ```
+
+```dataview
+TABLE tag,status,created from #projects sort date desc
+```

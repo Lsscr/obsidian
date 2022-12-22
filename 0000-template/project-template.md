@@ -2,7 +2,8 @@
 Title: project
 tag:
 - projects
-date: {{tp_data}}
+created: <% tp.file.creation_date() %>
+modification date: <% tp.file.last_modified_date("dddd Do MMMM YYYY HH:mm:ss") %>
 category: 学习,阅读
 starts: 3星级
 status: 写作中
