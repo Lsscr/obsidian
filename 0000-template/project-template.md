@@ -1,5 +1,5 @@
 ---
-Title: project
+Title: <% tp.file.title %>
 tag:
 - projects
 created: <% tp.file.creation_date() %>
@@ -11,3 +11,5 @@ Total: 0
 Incomplete: 0
 Completed: 0
 ---
+
+# <% tp.file.title %>
