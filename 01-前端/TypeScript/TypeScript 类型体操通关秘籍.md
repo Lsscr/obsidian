@@ -41,3 +41,40 @@ TypeScript 类型系统又分为 `简单类型系统` 与 `支持泛型的类型
 所以把TS 的类型编程戏称为`类型体操`了。
 
 ### TypeScript 类型系统中的类型
+TS 类型系统中肯定要把 JS 的运行时类型拿过来
+基本类型：number、boolean、string、object、bigint、symbol、undefined、null
+包装类型：Number、Boolean、String、Object、Symbol
+复合类型：class、Array，**元组（Tuple）、接口（Interface）、枚举（Enum）**
+
+`元组（Tuple）`就是元素个数和类型固定的数组类型：
+```typescript
+type Tuple = [number, string];
+```
+
+`接口（Interface）`可以描述函数、对象、构造器的结构：
+
+`枚举（Enum）`是一系列值的复合：
+
+#### 索引签名
+对象可以**动态添加属性**，如果不知道会有什么属性，可以用可索引签名：
+```typescript
+interface IPerson {
+    [prop: string]: string | number;
+}
+const obj:IPerson = {};
+obj.name = 'guang';
+obj.age = 18;
+```
+
+#### 类型装饰
+是否可选，是否只读等：
+```typescript
+interface IPerson {
+    readonly name: string;
+    age?: number;
+}
+
+type tuple = [string, number?];
+```
+
+### TypeScript 类型系统中的类型运算
